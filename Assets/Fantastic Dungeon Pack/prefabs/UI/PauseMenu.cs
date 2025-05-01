@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused)
+            if (uiManager.IsGamePaused())
                 ResumeGame();
             else
                 PauseGame();
@@ -20,15 +20,16 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        uiManager.ShowPauseMenu();  // Show pause menu via UIManager
         isPaused = true;
+        uiManager.ShowPauseMenu();
     }
 
     public void ResumeGame()
     {
-        uiManager.ResumeGame();     // Resume via UIManager
         isPaused = false;
+        uiManager.ResumeGame();
     }
+
 
     public void ExitToMenu()
     {
