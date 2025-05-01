@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: acf4f1cf1a3aeb54295d0daaee231d50
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - winScreenCanvas: {fileID: 5219838459808677057, guid: 7f6501f367f345e41af19b68f826214c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
