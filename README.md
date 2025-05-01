@@ -6,4 +6,4 @@ Infernal Descent - a single-level, isometric dungeon-crawler inspired by Hades. 
 - Adnan Khan
 - Brandon-Joshua Hines
 
-Link to [Final Report](GameDevGroupProject/Final Project Report_ _Infernal Descent_ (2).pdf) 
+Link to [Final Report](https://github.com/Zkarobi/GameDevGroupProject/blob/main/Final%20Project%20Report_%20_Infernal%20Descent_%20(2).pdf)
