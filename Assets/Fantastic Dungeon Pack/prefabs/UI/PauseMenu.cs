@@ -1,35 +1,38 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuCanvas;
+    public UIManager uiManager;
+
     private bool isPaused = false;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (isPaused) ResumeGame();
-            else PauseGame();
+            if (isPaused)
+                ResumeGame();
+            else
+                PauseGame();
         }
     }
 
     public void PauseGame()
     {
-        pauseMenuCanvas.SetActive(true);
-        Time.timeScale = 0f;
+        uiManager.ShowPauseMenu();  // Show pause menu via UIManager
         isPaused = true;
     }
 
     public void ResumeGame()
     {
-        pauseMenuCanvas.SetActive(false);
-        Time.timeScale = 1f;
+        uiManager.ResumeGame();     // Resume via UIManager
         isPaused = false;
     }
 
-    public void ExitGame()
+    public void ExitToMenu()
     {
-        Application.Quit();
+        uiManager.ReturnToStartMenu();
+        isPaused = false;
     }
 }
